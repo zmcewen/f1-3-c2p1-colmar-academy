@@ -1,0 +1,401 @@
+html {
+  font-size: 16px;
+  font-family: sans-serif;
+}
+body {
+  margin: 0;
+}
+/* Header bar */
+
+header {
+  height:64px;
+  background-color: white;
+  position: fixed;
+  z-index: 1;
+  display: flex;
+  width: 100%;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+.logo img {
+  margin-left: 1.5rem;
+  width: 2.5rem;
+}
+.logo span {
+  font-size: 1.2rem;
+}
+nav {
+  display: flex;
+  align-items: center;
+  margin-right: 2rem;
+}
+nav ul li {
+  display: inline-block;
+  margin: 0rem 0.5rem;
+  align-items: center;
+}
+.icons {
+  display: none;
+}
+
+/*Mobile Version */
+
+@media only screen and (max-width:685px) {
+.header {
+  height:64px;
+}
+nav {
+    display: none;
+  }
+.logo {
+  display: none;
+}
+.icons {
+  display: flex;
+  justify-content:space-around;
+  flex-grow: 1;
+  padding-top:10px;
+}
+.icons img {
+  padding-top:10px;
+}
+}
+/* Top Banner Section */
+
+.banner {
+  width: 100%;
+  background-color: #d8d8d8;
+  padding-top: 64px;
+  display: flex;
+}
+.banner img {
+  width: 60%;
+  height: 60%;
+  margin: 32px 40px 32px 24px;
+  display: flex;
+}
+.banner-content {
+  margin-top: 10%;
+  margin-right: 5%;
+  display: flex;
+}
+.learn {
+  margin: 2rem 0;
+  line-height: 1.2;
+  color: #5e5e5e;
+  display: flex;
+  flex-direction: column;
+}
+.learn h1 {
+  font-size: 3vw;
+  margin: 0 0 5% 0;
+  display: block;
+  width: 100%;
+}
+.learn p {
+  font-size: 1.5vw;
+  line-height: 1.5;
+  font-weight: 400;
+  display: block;
+  margin: 5% 0;
+}
+.start {
+  background-color: #5e5e5e;
+  padding: 3% 0;
+  margin: 5% 0;
+  justify-content: center;
+  color: white;
+  display: flex;
+  font-size: 1.3vw;
+}
+a {
+  text-decoration: none;
+  color: #5e5e5e;
+}
+
+/*Mobile Version */
+
+@media only screen and (max-width:685px) {
+  .banner {
+    justify-content: center;
+    background-color:#5e5e5e;
+  }
+  .banner img {
+    display: none;
+  }
+  .banner-content {
+    width: 100%;
+    margin:244px 0 0 0;
+    background-color: #d8d8d8;
+    padding-top: 2rem;
+  }
+  .learn {
+    width: 100%;
+    margin: 2rem 1rem 2rem 1rem;
+  }
+  .learn h1 {
+    font-size: 10vw;
+  }
+  .learn p {
+    font-size: 7vw;
+  }
+  .start {
+    font-size: 4vw;
+  }
+}
+
+/* Middle Information Section */
+
+.information {
+  width: 100%;
+  display: flex;
+}
+.left {
+  width: 60%;
+  margin: 32px 24px;
+}
+.left img {
+  width: 100%;
+  height: auto;
+  display: flex;
+}
+.left h2 {
+  padding: 32px 0 24px 0;
+  font-size: 3.3vw;
+  margin:0;
+  color: #5e5e5e;
+}
+.left p{
+  color: #5e5e5e;
+}
+.left .name {
+  font-size: 0.9rem;
+  margin-top: 32px;
+}
+.right {
+  padding-top: 16px;
+  width: 35%;
+  border-left: 1px solid #d8d8d8;
+}
+.boxes {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid #d8d8d8;
+}
+.boxes img {
+  min-width: 35%;
+  min-height: 35%;
+  margin: 1rem;
+}
+.desktop-image {
+  width: 100%;
+  height: 100%;
+}
+.mobile-image {
+  display: none;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+  color: #5e5e5e;
+  width: 100%;
+  padding-right: 2rem;
+}
+.content h3 {
+  font-size: 1.7vw;
+  margin-top: 0;
+}
+.content p {
+  font-size: 1vw;
+  padding-right: 1rem;
+}
+.content span {
+  margin:0.5rem 0;
+}
+.lecture, .fisma {
+  background-color: #d8d8d8;
+}
+
+/*Mobile Version */
+
+@media only screen and (max-width:685px) {
+  .info-left {
+    display: none;
+  }
+  .right {
+    width: 100%;
+    background-color: #f3f5f5;
+  }
+  .boxes {
+  flex-direction: column;
+  border: none;
+  background-color: #f3f5f5;
+  }
+  .boxes img {
+    width: 95%;
+    height: 50%;
+    margin: 1rem;
+  }
+  .desktop-image {
+  display: none;
+  }
+  .mobile-image {
+  display: block;
+}
+.content {
+  margin: 0 0 0 2rem;
+}
+.content h3 {
+  font-size: 7vw;
+}
+.content p {
+  font-size: 5vw;
+}
+.content span {
+  margin: 0 0 1rem 0;
+  font-size: 4vw;
+}
+.lecture {
+  background-color: #f3f5f5;
+  margin-bottom: 16px;
+}
+}
+/* Lower Learning Section */
+
+.learning {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  background-color: #eaebec;
+  flex-direction: column;
+  padding-bottom:4rem;
+}
+.title {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
+  color: #5e5e5e;
+}
+.thumbnails {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-flow: wrap;
+  margin: 0 5%;
+}
+.subjects {
+  width: 30%;
+  margin: 0 1% 2% 1%;
+  background-color: white;
+  text-decoration: none;
+  padding-bottom: 1rem;
+}
+.subjects img {
+  width: 100%;
+}
+.subject-content {
+  height: 15vw;
+}
+.courses {
+  margin:.5rem 1rem .5rem 2rem;
+  font-size: 1.5vw;
+  color: #d8d8d8;
+
+}
+h4 {
+  font-size:1.7vw;
+  margin: 2rem 0 1rem 2rem
+}
+.info {
+  font-size: 1.5vw;
+  margin: 1rem 2rem 2rem 2rem;
+}
+.video {
+  margin-top: 0;
+}
+.fisma, .new-york, .right {
+  border: 0;
+}
+.fisma img, .new-york img {
+  width: 100%;
+  height: 100%;
+}
+.right-video {
+  padding-top: 0;
+}
+.exhibit {
+  background-color:#f3f5f5;
+  border-bottom: 1px solid #d8d8d8;
+}
+ .thesis, footer {
+  background-color:#f3f5f5;
+ }
+
+/* Mobile Version */
+
+@media only screen and (max-width:685px) {
+  .learning {
+    background-color: #f3f5f5;
+    color: #5e5e5e;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #d8d8d8;
+  }
+  .learning .title {
+    border-top: 1px solid #d8d8d8;
+  }
+  .title h1 {
+    font-size: 7vw;
+    margin: 0;
+  }
+  .thumbnails {
+    flex-direction: column;
+  }
+  .subjects {
+    width: 100%;
+    background-color: #d8d8d8;
+  }
+  .subjects img, .subjects p {
+    display: none;
+  }
+  .subject-content {
+    display: flex;
+  }
+  .subject-content h4 {
+    font-size: 5vw;
+  }
+  .right-video {
+    display: none;
+  }
+  .left {
+    width: 100%;
+  }
+  .left h2, .left p {
+    display: none;
+  }
+  footer {
+    padding-top: 24px;
+  }
+}
+
+ footer {
+   display: flex;
+   width: 100%;
+ }
+ .copyright {
+   display: flex;
+   flex-grow: 1;
+   margin:1rem 0 3rem 1.5rem;
+ }
+ .terms {
+   display: flex;
+   margin-right: 2rem;
+ }
+ .terms span {
+  display: flex;
+  margin-right: 1rem;
+  margin:1rem 0 3rem 1.5rem;
+ }
